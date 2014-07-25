@@ -1,0 +1,23 @@
+<%= form_for(@signup) do |f| %>
+  <%= f.error_messages %>
+
+  <%= content_tag :div do -%>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  <% end -%>
+
+  <%= content_tag :div do -%>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  <% end -%>
+
+  <%= content_tag :div do -%>
+    <%= f.label :company_name %>
+    <%= f.text_field :company_name %>
+  <% end -%>
+
+  <%= content_tag :div do -%>
+    <%= f.submit "Submit" %>
+  <% end -%>
+
+<% end -%>
